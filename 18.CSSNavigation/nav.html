@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drop-down Navigation Menu</title>
+<style>
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #333;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  /*display: grid;
+ grid-template-columns: 10% 10% 10% 10%;*/
+
+}
+
+.nav-menu li {
+  position:relative;
+}
+
+.nav-menu li a {
+ display: flex;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.nav-menu li a:hover {
+  background-color: orange;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  min-width: 200px;
+  list-style: none;
+  
+}
+
+.dropdown-menu li a {
+  padding: 12px 20px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #555;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Responsive (Optional) */
+
+
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <ul class="nav-menu">
+    <li><a href="#">Home</a></li>
+    <li class="dropdown">
+      <a href="#">Services ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">App Development</a></li>
+        <li><a href="#">AI Solutions</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>

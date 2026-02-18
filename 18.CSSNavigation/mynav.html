@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+  background-color: #333;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+
+  /*display: grid;
+ grid-template-columns: 10% 10% 10% 10%;*/
+
+}
+.nav-menu li {
+  position:relative;
+}
+.nav-menu li a {
+display: flex;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.dropdown-menu {
+ display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  min-width: 200px;
+  list-style: none;
+  
+}
+.dropdown:hover .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+  <ul class="nav-menu">
+    <li><a href="#">Home</a></li>
+    <li class="dropdown">
+      <a href="#">Services ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">App Development</a></li>
+        <li><a href="#">AI Solutions</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+</body>
+</html>

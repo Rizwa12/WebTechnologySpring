@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    /* ============================
+       1️⃣ Centering Content Example
+       ============================ */
+    .center-container {
+      display: flex;              /* Activate Flexbox */
+      justify-content: center;    /* Center horizontally */
+      align-items: center;        /* Center vertically */
+      height: 150px;              /* Container height */
+      border: 2px solid black;    /* To see container boundary */
+      margin-bottom: 20px;
+    }
+
+    .center-container .box {
+      width: 120px;
+      height: 80px;
+      background-color: orange;
+      text-align: center;
+      line-height: 80px;          /* Vertically center text inside box */
+      color: white;
+      font-weight: bold;
+    }
+
+    /* ============================
+       2️⃣ Navigation Bar Example
+       ============================ */
+    .navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;             /* Vertically center items */
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    .navbar .menu a
+    {
+     color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    
+
+    /* ============================
+       3️⃣ Card Layout Example
+       ============================ */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;     /* Allow cards to wrap to next line */
+      gap:20px;           /* Space between cards */
+      margin-top: 20px;
+    }
+
+    .card-container .card {
+     width: 120px;
+      height: 80px;
+      background-color:  lightblue;;
+      text-align: center;
+            /* Vertically center text inside box */
+      line-height: 80px;     
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+       border-radius: 5px;
+
+
+    }
+
+    /* ============================
+       4️⃣ Column Layout Example
+       ============================ */
+    .column-container {
+      display: flex;
+      flex-direction: column;       /* Stack items vertically */
+      justify-content: space-between; /* Space between items vertically */
+      height: 200px;
+      border: 2px solid black;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    .column-container .item {
+      background-color: pink;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Flexbox Examples - Complete Guide</h1>
+
+  <!-- 1️⃣ Centering Content -->
+  <h2>1. Centering Content (Horizontal + Vertical)</h2>
+  <div class="center-container">
+    <div class="box">Centered Box</div>
+  </div>
+
+  <!-- 2️⃣ Navigation Bar -->
+  <h2>2. Navigation Bar</h2>
+  <nav class="navbar">
+    <div class="logo">MyLogo</div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <!-- 3️⃣ Card Layout -->
+  <h2>3. Card Layout with Wrap</h2>
+  <div class="card-container">
+    <div class="card">1</div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+    <div class="card">4</div>
+    <div class="card">5</div>
+    <div class="card">6</div>
+  </div>
+
+  <!-- 4️⃣ Column Layout -->
+  <h2>4. Column Layout</h2>
+  <div class="column-container">
+    <div class="item">Top</div>
+    <div class="item">Middle</div>
+    <div class="item">Bottom</div>
+  </div>
+
+</body>
+</html>
