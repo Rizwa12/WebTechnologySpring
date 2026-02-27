@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animal Pictures</title>
+
+    <!-- Internal Style Sheet -->
+    <style>
+        /* Main outer container */
+        .main-container {
+            width: 800px;
+            margin: 50px auto;              /* Center the container */
+            border: 4px solid black;
+            padding: 30px;                  /* Box model: padding */
+            box-sizing: border-box;
+        }
+
+        /* Main heading */
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Animal section container */
+        .animals {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* Individual animal box */
+        .animal-box {
+            width: 300px;
+            border: 3px solid black;
+            padding: 20px;                  /* Box model */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* Sub headings */
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        /* Image container */
+        .image-box {
+            border: 2px solid black;
+            padding: 10px;                  /* Box model */
+            margin: 0 auto;
+            width: 200px;
+            box-sizing: border-box;
+        }
+
+        /* Image styling */
+        .image-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <h1>Animal Pictures</h1>
+
+        <div class="animals">
+
+            <div class="animal-box">
+                <h2>Koala</h2>
+                <div class="image-box">
+                    <img src="koala.jpg" alt="Koala">
+                </div>
+            </div>
+
+            <div class="animal-box">
+                <h2>Penguins</h2>
+                <div class="image-box">
+                    <img src="penguins.jpg" alt="Penguins">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

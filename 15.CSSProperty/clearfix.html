@@ -11,23 +11,24 @@
         img{
             float: right;
         }
-        .clearfix {
+         .clearfix {
             
-            clear: both;
-            overflow: auto;
-        }
+            overflow: scroll;
+        } 
 
     </style>
 </head>
 <body>
-    <p>In this example, the image is taller than the element containing it, and it is floated, so it overflows outside of its container:</p><div>
+    <p>In this example, the image is taller than the element containing it, and it is floated, so it overflows outside of its container:
+
+</p><div class="clearfix">
 <img class="img1" src="C:\Users\Lenovo\Desktop\image2.jpg" alt="Pineapple" width="500px" height="500px">
 Loremipsum dolor sit amet, consecteturadipiscingelit. Phasellusimperdiet, nullaet dictum interdum...
 </div>
-<p >Add a clearfix class with overflow: auto; to the containing element, to fix this problem:</p>
+<!-- <p >Add a clearfix class with overflow: auto; to the containing element, to fix this problem:</p>
 <div class="clearfix">
 <img class="img1" src="C:\Users\Lenovo\Desktop\image2.jpg" alt="Pineapple" width="500px" height="500px">
 Loremipsum dolor sit amet, consecteturadipiscingelit. Phasellusimperdiet, nullaet dictum interdum...
-</div>
+</div> -->
 </body>
 </html>

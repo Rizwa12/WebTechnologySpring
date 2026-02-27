@@ -7,20 +7,24 @@
     <style>
         .container1
         {
-            display: grid;
-            grid-template-columns: auto auto auto auto auto;
+            display: flex;
+         /* display: grid;
+            grid-template-columns: 25% 50% 10% 5% 10%; */
             background-color: dodgerblue;
-            padding: 10px;
+            padding: 10px; 
+            column-gap: 25%;
         }
-        .container1 div
+      
+         .container1 div
         {
             background-color: #f1f1f1;
             text-align: center;
             border: 1px solid black;
             padding: 20px;
             font-size: 30px;
+            gap: 20%;
 
-        }
+        } 
 
         
   
@@ -35,6 +39,7 @@
   <div>4</div>
   <div>5</div>
 </div>
+
 
 
 </body>

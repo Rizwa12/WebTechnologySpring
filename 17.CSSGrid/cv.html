@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My CV</title>
+
+    <style>
+        /* ===== BASIC RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        /* ===== CV CONTAINER ===== */
+        .cv {
+            width: 800px;
+            margin: 30px auto;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 30% 70%;
+        }
+
+        /* ===== LEFT SIDE ===== */
+        .left {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 15px;
+            border: 3px solid white;
+        }
+
+        .left h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .left p {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+        }
+
+        .left ul {
+            list-style: none;
+            font-size: 14px;
+        }
+
+        .left ul li {
+            margin-bottom: 8px;
+        }
+
+        /* ===== RIGHT SIDE ===== */
+        .right {
+            padding: 20px;
+        }
+
+        .right h1 {
+            font-size: 28px;
+            color: #2c3e50;
+        }
+
+        .right h3 {
+            color: gray;
+            margin-bottom: 20px;
+        }
+
+        .right-section {
+            margin-bottom: 25px;
+        }
+
+        .right-section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+        .right-section p {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .job {
+            margin-bottom: 15px;
+        }
+
+        .job h4 {
+            color: #333;
+        }
+
+        .job span {
+            font-size: 13px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="cv">
+
+    <!-- LEFT SECTION -->
+    <div class="left">
+
+        <img src="https://via.placeholder.com/120" alt="Profile Image" class="profile-img">
+
+        <h2>Muhammad Rizwan</h2>
+        <p>Software Developer</p>
+
+        <div class="section-title">Contact</div>
+        <ul>
+            <li>📞 0300-1234567</li>
+            <li>✉️ rizwan@email.com</li>
+            <li>📍 Pakistan</li>
+        </ul>
+
+        <div class="section-title">Skills</div>
+        <ul>
+            <li>C# / .NET</li>
+            <li>ASP.NET Core</li>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>SQL Server</li>
+        </ul>
+
+        <div class="section-title">Languages</div>
+        <ul>
+            <li>English</li>
+            <li>Urdu</li>
+        </ul>
+
+    </div>
+
+    <!-- RIGHT SECTION -->
+    <div class="right">
+
+        <h1>Muhammad Rizwan</h1>
+        <h3>.NET Developer</h3>
+
+        <div class="right-section">
+            <h2>Profile</h2>
+            <p>
+                Experienced software developer with strong knowledge of C#, ASP.NET Core,
+                Entity Framework, and Web APIs. Passionate about clean code and problem solving.
+            </p>
+        </div>
+
+        <div class="right-section">
+            <h2>Experience</h2>
+
+            <div class="job">
+                <h4>Software Developer</h4>
+                <span>2022 – Present</span>
+                <p>
+                    Working on enterprise-level ERP systems, APIs, authentication, and database design.
+                </p>
+            </div>
+
+            <div class="job">
+                <h4>Junior Developer</h4>
+                <span>2020 – 2022</span>
+                <p>
+                    Developed CRUD applications and worked with SQL Server and frontend technologies.
+                </p>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <h2>Education</h2>
+            <p><strong>Master’s in Computer Science</strong> – University</p>
+            <p><strong>Bachelor’s in Computer Science</strong> – University</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
