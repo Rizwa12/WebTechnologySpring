@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Bar with Nested List</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            background-color: #0073b7; /* blue */
+        }
+
+        .navbar ul {
+            list-style-type: none;
+        }
+
+        .navbar >ul {
+            display: flex;
+        }
+
+        .navbar ul li {
+          display: block;
+             position: relative;
+           
+        }
+
+        .navbar ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        
+        /* Hover effect */
+        .navbar ul li a:hover {
+            background-color: #005f94;
+        }
+
+        /* Nested list (dropdown) */
+        .navbar ul li ul {
+            display: none;              /* hidden initially */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #2fa4c4;
+            min-width: 180px;
+        }
+
+        .navbar ul li ul li a {
+            padding: 12px 15px;
+        }
+
+        .navbar ul li ul li a:hover {
+            background-color: #1c8aa8;
+        }
+
+        /* Show nested list on hover */
+        .navbar ul li:hover ul {
+            display: block;
+        }
+
+        /* Content area */
+        .content {
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+
+            <li>
+                <a href="#">Faculty</a>
+                <ul>
+                    <li><a href="#">DrMunir</a></li>
+                    <li><a href="#">DrNaseer</a></li>
+                    <li><a href="#">ShahiadAbid</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Program</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </div>
+
+    <!-- Content Area -->
+    <div class="content"></div>
+
+</body>
+</html>

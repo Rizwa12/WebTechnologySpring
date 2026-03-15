@@ -1,48 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Course List with Links</title>
+    <title>Teachers and Subjects</title>
 </head>
 <body>
-    <h2>I &nbsp; Teacher: <a href="https://example.com/dr-munir-ahmad" target="_blank">Dr. Munir Ahmad</a></h2>
-    <ul>
-        <li>
-            <a href="https://example.com/opf" target="_blank">oPF</a> 
-            - <a href="#opf-internal">Internal Link</a>
-        </li>
-        <li>
-            <a href="https://example.com/oop" target="_blank">oOOP</a> 
-            - <a href="#oop-internal">Internal Link</a>
-        </li>
-        <li>
-            <a href="https://example.com/dsa" target="_blank">oDSA</a> 
-            - <a href="#dsa-internal">Internal Link</a>
-        </li>
-    </ul>
 
-    <h2>II &nbsp; Teacher: <a href="https://example.com/dr-naseer-ahmed" target="_blank">Dr. Naseer Ahmed</a></h2>
-    <ul>
-        <li>
-            <a href="https://example.com/dbs" target="_blank">oDBS</a> 
-            - <a href="#dbs-internal">Internal Link</a>
-        </li>
-        <li>
-            <a href="https://example.com/wt" target="_blank">oWT</a> 
-            - <a href="#wt-internal">Internal Link</a>
-        </li>
-        <li>
-            <a href="https://example.com/os" target="_blank">oOS</a> 
-            - <a href="#os-internal">Internal Link</a>
-        </li>
-    </ul>
+<h2>Course Structure</h2>
 
-    <!-- Internal link targets -->
-    <h3 id="opf-internal">oPF Internal Page</h3>
-    <h3 id="oop-internal">oOOP Internal Page</h3>
-    <h3 id="dsa-internal">oDSA Internal Page</h3>
-    <h3 id="dbs-internal">oDBS Internal Page</h3>
-    <h3 id="wt-internal">oWT Internal Page</h3>
-    <h3 id="os-internal">oOS Internal Page</h3>
+<ol type="I">
+
+    <li>
+        Teacher:
+        <a href="https://example.com/dr-munir-ahmad" target="_blank">
+            Mr.Shafique
+        </a>
+
+        <ul>
+            <li>
+                <a href="https://example.com/pf" target="_blank">PF</a>
+                →
+                <a href="#DS">Details</a>
+            </li>
+
+            <li>
+                <a href="https://example.com/oop" target="_blank">OOP</a>
+                →
+                <a href="#OS">Details</a>
+            </li>
+
+            
+        </ul>
+    </li>
+
+    <li>
+        Teacher:
+        <a href="https://example.com/dr-naseer-ahmed" target="_blank">
+            Mr.Rizwan
+        </a>
+
+        <ul>
+            <li>
+                <a href="https://example.com/dbs" target="_blank">DBS</a>
+                →
+                <a href="#OS">Details</a>
+            </li>
+
+            <li>
+                <a href="https://example.com/wt" target="_blank">WT</a>
+                →
+                <a href="#wt">Details</a>
+            </li>
+
+            
+        </ul>
+    </li>
+
+</ol>
+
+<hr>
+
+<!-- Internal Link Targets -->
+<h3 id="pf">PF – Programming Fundamentals</h3>
+<p>Basic programming concepts.</p>
+
+<h3 id="oop">OOP – Object Oriented Programming</h3>
+<p>Classes, objects, inheritance.</p>
+
+<h3 id="dsa">DSA – Data Structures & Algorithms</h3>
+<p>Arrays, stacks, queues, trees.</p>
+
+<h3 id="dbs">DBS – Database Systems</h3>
+<p>SQL and database design.</p>
+
+<h3 id="wt">WT – Web Technologies</h3>
+<p>HTML, CSS, JavaScript.</p>
+
+<h3 id="os">OS – Operating Systems</h3>
+<p>Processes, memory, scheduling.</p>
+
 </body>
 </html>
