@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Add(x, y)
+        {
+            let a = x;
+            let b = y;
+            let sum = a+b;
+            return sum;
+        }
+        let x = Add(12,13)
+        console.log(x);
+
+        function showName() {
+    document.write("Muhammad Rizwan Turk<br>");
+}
+
+function hideName() {
+    document.write(""); // ye kaam nahi karega as expected
+}
+    </script>
+    <button onclick="Add(20,30)">PerformSum</button>
+    <button onclick="showName()">Show Name</button>
+    <button onclick="hideName()">Hide Name</button>
+</body>
+</html>

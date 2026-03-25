@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for (let i = 1; i <= 3; i++) {
+            console.log("Count:", i);
+            document.write("count: ",i+"<br>")
+}
+
+var a = "Ali usman";
+ var students =[
+     "ali","ahmed","anis"
+ ]
+ //document.write(students[1])
+ for(var i in students)
+ {
+    document.write(students[i]+"<br/>");
+ }
+ for(let j = 0;j<students.length;j++)
+ {
+    document.write(students[j]);
+ }
+
+ let person = [{
+    name: "Ali",
+    age: 25,
+    city: "Abbottabad"
+},
+{
+    name: "usman",
+    age: 25,
+    city: "Abbottabad"
+},
+{
+    name: "Arif",
+    age: 25,
+    city: "Pindi"
+}
+];
+//foreach(var i in students)
+
+for (var i in person) {
+    for (var key in person[i]) {
+        document.write(key + ": " + person[i][key] + "<br>");
+    }
+    document.write("<br>");
+}
+//var students = new Array("ali","ahmed","anis");
+    </script>
+</body>
+</html>

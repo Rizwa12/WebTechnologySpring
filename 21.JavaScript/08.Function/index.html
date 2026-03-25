@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hello()
+        {
+            document.write("hello world");
+        }
+
+        function passingparameter(name,age)
+        {
+            document.write(name +"<br>");
+            document.write(age +"<br>");
+        }
+        function add()
+        {
+            let a = 10;
+            let b = 20;
+            return a+b;
+        }
+        let result = add()
+        document.write("sum is"+result)
+        //hello();
+    </script>
+    <button onclick="passingparameter('ali',12)">Click</button>
+</body>
+</html>
