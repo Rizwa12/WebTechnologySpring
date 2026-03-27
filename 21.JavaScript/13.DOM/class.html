@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let isChanged = false;
+        function changeName()
+        {
+        let elements = document.getElementsByClassName("name")
+        if(!isChanged)
+        {
+            elements[0].innerHTML = "Ali"
+            elements[1].innerHTML = "not welcome"
+            elements[0].style.color = "red"
+            isChanged = true
+        }
+        else
+        {
+            elements[0].innerHTML = "Rizwan";
+            elements[1].innerHTML = "Welcome";
+            isChanged = false;
+        }
+        }
+       
+    </script>
+
+    <p class="name">rizwan</p>
+    <p class="name">welcome</p>
+
+   
+
+    <button onclick="changeName()">Change Name</button>
+    
+    
+</body>
+</html>

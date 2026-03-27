@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mouse Over / Out Simple Example</title>
+<script type="text/javascript">
+function over() {
+    alert("Mouse Over"); // show message when mouse enters
+}
+
+function out() {
+    alert("Mouse Out"); // show message when mouse leaves
+}
+</script>
+</head>
+<body>
+
+<p>Move your mouse over the box below:</p>
+
+<div onmouseover="over()" onmouseout="out()" 
+     style="width:300px; height:100px; border:2px solid black; text-align:center; line-height:100px;">
+  Hover Here
+</div>
+<input type="button" value="Clik1" onmouseover="alert('HiRizwan')"/>
+<input type="button" value="Clik2" onmouseout="alert('HiBIIT')"/>
+
+</body>
+</html>

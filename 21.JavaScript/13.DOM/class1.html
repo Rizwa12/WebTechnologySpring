@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function myFunction() 
+    {
+        var x = document.getElementsByClassName("example color");
+        x[0].style.backgroundColor = "red";
+        x[1].style.backgroundColor = "yellow";
+        }
+</script>
+</head>
+<body>
+    <div class="example color">
+        <p>P element in second div with class="example color". Div's index is 1.</p>
+        <p>P element in second div with class="example color". Div's index is 1.</p>
+    </div>
+    <button onclick="myFunction()">Try it</button>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction()
+        {
+            var x = document.getElementById("demo")
+            var y = x.getElementsByTagName("p")
+            var i;
+         
+             for(i=0;i<y.length;i++)
+             {
+                 y[i].style.backgroundColor = "red";
+
+             }
+        }
+    
+    </script>
+</head>
+<body>
+    <div id ="demo">
+        <p>first</p>
+        <p>second</p>
+        <p>third</p>
+
+    </div>
+    <button onclick="myFunction()">Try it</button>
+</body>
+</html>

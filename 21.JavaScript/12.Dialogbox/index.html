@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Confirmation Dialog Example</title>
+<script>
+function askUser() {
+    alert("welcome");
+    // Show confirmation dialog
+    var consent = confirm("Do you want to proceed?");
+    
+    // Check user response
+    if(consent) {
+        alert("You clicked OK! Proceeding...");
+    } else {
+        alert("You clicked Cancel! Action stopped.");
+    }
+}
+
+function checkUser() {
+    if(confirm("Do you want to proceed?")) {
+        alert("You clicked OK!");
+    } else {
+        alert("You clicked Cancel!");
+    }
+}
+
+
+
+function performCalculation() {
+    // Get values from input
+    var num1 = 20
+    var num2 = 30
+    
+    // Check if numbers are valid
+    if(isNaN(num1) || isNaN(num2)) {
+        alert("Please enter valid numbers!");
+        return;
+    }
+
+    // Ask user for confirmation
+    var consent = confirm("Do you want to perform the calculation?");
+    
+    if(consent) {
+        var sum = num1 + num2; // Example: addition
+        alert("The sum is: " + sum);
+    } else {
+        alert("Calculation cancelled!");
+    }
+}
+</script>
+</head>
+<body>
+
+<h2>Confirmation Dialog Example</h2>
+
+<!-- Button to trigger confirmation -->
+<button onclick="checkUser()">Click Me</button>
+<button onclick="performCalculation()">Calculate</button>
+
+</body>
+</html>

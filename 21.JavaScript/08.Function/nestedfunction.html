@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function outerFunction()
+        // {
+        //      let message = "Hello from outer function";
+        //      function innerFunction()
+        //      {
+        //         console.log(message); 
+        //      } 
+        //       innerFunction();
+   
+        // }
+        // outerFunction();
+
+        function hypotenuse(a,b)
+        {
+            function square(x)
+            {
+                return x*x
+            }
+            return Math.sqrt(square(a)+square(b))
+
+        }
+        function SecondFunction()
+        {
+            var result;
+            result = hypotenuse(1,2)
+            document.write(result);
+        }
+        
+    </script>
+    <p>Click the following button to call the function</p> 
+
+     <button onclick=" SecondFunction ()"> Call Function </button>
+</body>
+</html>
+
+
+c = \sqrt{a^2 + b^2}

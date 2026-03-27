@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunction()
+        {
+            var v1 = document.getElementById("para");
+            //document.write(v1);
+            v1.innerHTML = "awesome";
+            v1.style.color = "yellow"
+            v1.style.fontSize = "50px"
+            v1.style.backgroundColor="red"
+            v1.style.border ="5px solid black"
+        }
+        //document
+        //dom getelementbyid
+    </script>
+</head>
+<body>
+    <p id="para">
+        welcome to dom
+    </p>
+    <input type="button" onclick="myfunction()" value="Click">
+</body>
+</html>
