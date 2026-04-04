@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function showValue() 
+        { 
+            var dayOfMonth = 0; 
+            if (dayOfMonth < 1 || dayOfMonth > 31) 
+            { 
+                dayOfMonth = Number.NaN 
+                alert("Day of Month must be between 1 and 31.") 
+            } 
+            document.write("Value of dayOfMonth : " + dayOfMonth ); 
+        }
+ 
+    </script>
+    <button onclick="showValue();" > Click Me </button>
+
+</body>
+</html>

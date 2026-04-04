@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Person = {
+            name:"",
+            age:0
+        }
+         Person.AddInput = function(name,Age)
+         {
+            this.name = name
+            this.age = Age
+
+         }
+         Person.AddInput("Ali",24)
+         console.log(Person)
+         let name = prompt("enter name")
+       //Creation Using new Object() Constructor
+        //  car.name = "Corolla"
+        //  car.color = "yellow"
+        //  car.company = "toyota"
+        //  car.price = 500000
+        //  console.log(car)
+        // documet.write(car)
+        // document.write(JSON.stringify(car));
+        // document.write("CarName:"+ car.name+"<br>")
+        // document.write("CarColor:"+ car.color+"<br>")
+        // document.write("Company:"+ car.company+"<br>")
+        // document.write("Price:"+ car.price+"<br>")
+         var car = new Object(); 
+
+        car.Addvalue =  function(name,color,company,price)
+        {
+            this.name = name
+            this.color = color
+            this.company = company
+            this.price = price
+
+        }
+
+       car.showData =  function()
+        {
+           document.write("CarName:"+ this.name+"<br>")
+           document.write("CarColor:"+ this.color+"<br>")
+           document.write("Company:"+ this.company+"<br>")
+           document.write("Price:"+ this.price+"<br>")
+        }
+
+        car.totalExpense = function(fuel, toll)
+        {
+            return fuel + toll;
+        }
+        car.Addvalue("Corolla","yellow","toyota","500000")
+        car.showData()
+        var total = car.totalExpense(2000, 500);
+        document.write("Total Expense: " + total);
+
+       
+    </script>
+</body>
+</html>

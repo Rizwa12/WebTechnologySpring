@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Form Validation</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="card p-4 shadow">
+        <h3 class="text-center mb-4">Registration Form</h3>
+
+        <form id="myForm">
+            
+            <!-- Name -->
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" id="name" class="form-control">
+                <small id="nameError" class="text-danger"></small>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="text" id="email" class="form-control">
+                <small id="emailError" class="text-danger"></small>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" id="password" class="form-control">
+                <small id="passwordError" class="text-danger"></small>
+            </div>
+
+            <!-- Age -->
+            <div class="mb-3">
+                <label class="form-label">Age</label>
+                <input type="number" id="age" class="form-control">
+                <small id="ageError" class="text-danger"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+
+        </form>
+    </div>
+</div>
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(e)
+{
+    e.preventDefault(); // stop form submit
+
+    // Get values
+    var name = document.getElementById("name").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var password = document.getElementById("password").value.trim();
+    var age = document.getElementById("age").value.trim();
+
+    // Clear old errors
+    document.getElementById("nameError").innerHTML = "";
+    document.getElementById("emailError").innerHTML = "";
+    document.getElementById("passwordError").innerHTML = "";
+    document.getElementById("ageError").innerHTML = "";
+
+    var isValid = true;
+
+    // Name validation
+    if(name === "")
+    {
+        document.getElementById("nameError").innerHTML = "Name is required";
+        isValid = false;
+    }
+
+    // Email validation
+    if(email === "")
+    {
+        document.getElementById("emailError").innerHTML = "Email is required";
+        isValid = false;
+    }
+    else if(!email.includes("@"))
+    {
+        document.getElementById("emailError").innerHTML = "Invalid email";
+        isValid = false;
+    }
+
+    // Password validation
+    if(password.length < 6)
+    {
+        document.getElementById("passwordError").innerHTML = "Min 6 characters required";
+        isValid = false;
+    }
+
+    // Age validation
+    if(age === "" || age < 18)
+    {
+        document.getElementById("ageError").innerHTML = "Age must be 18+";
+        isValid = false;
+    }
+
+    // Final submit
+    if(isValid)
+    {
+        alert("Form Submitted Successfully!");
+        // you can call API here (ASP.NET)
+    }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var person = new Object(); //using constructor
+    // person.Name = "Rizwan"
+    // person.Address = "Abbottabad"
+    // person.contactnumber = "03135951332"
+    // person.incometax = 1000
+    // console.log(person)
+    //document.write(JSON.stringify(person))
+
+    var car =[ 
+    {
+        name : "Alto",
+        model: "2024",
+        price: 33330
+    },
+    {
+        name : "Gli",
+        model: "2023",
+        price: 444440
+    },
+
+]
+console.log(car)
+    // car.InputData = function()
+    // {
+    //     this.name = prompt("enter the car name"),
+    //     this.model = "2025"
+    //     this.price = 1220000
+
+    // }
+    // car.InputData()
+    // console.log(car)
+    person.InputFunction = function(name,address,incomtax)
+    {
+        this.name = name
+        this.address = address
+        this.incomtax = incomtax
+
+    }
+    person.OutPutFunction = function()
+    {
+        document.write("Name of Person:"+this.name+"<br>")
+        document.write("Address of Person:"+this.address+"<br>")
+        document.write("Income of Person:"+this.incomtax+"<br>")
+    }
+    person.InputFunction("shakir","southpunjab",10000)
+    person.OutPutFunction()
+    //string
+    //var a = 'Ab-dul Basit.'
+    //var b = " Pakistan Paindabad"
+    //document.write(a.charAt(6))
+
+    //document.write(a.concat(b))
+
+    //document.write(a.indexOf("B")+"<br>")
+
+    //document.write(a.lastIndexOf("B"))
+
+    //document.write(a.replace("Abdul Basit","Shakir ustad"))
+
+    //document.write(a.substring(4,8))
+
+    var x = a.split("-")
+    console.log(x)
+    document.write(x)
+
+
+    
+   
+    //console.log(car)
+    //document.write(car.name)
+    </script>
+</body>
+</html>

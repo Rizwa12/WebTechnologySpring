@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array declaration
+        var students = ["ali","ahmed"]
+        var students1 = new Array("ali","ahmed");
+        //document.write(students[0]);
+        for (const key in students) {
+            document.write(students[key]+"<br>")
+        }
+
+        var frutis = new Array(5);
+        frutis[0] = "Mangoes"
+        frutis[1] = "Apples"
+        frutis[2] = "Orange"
+        frutis[3] = "Grapes"
+        frutis[4] = "strawberry"
+
+        var games = new Array();
+         var choice;
+         do
+         {
+             var name = prompt("Enter game name:");
+             games.push(name);
+             choice = prompt("Do you want to add more? (yes/no)");
+         }
+        while(choice.toLowerCase() === "yes");
+         console.log(games);
+        // for(var i =0;i<games.length;i++)
+        //  {
+        //      games[i] = prompt("enter the name on location number"+i)
+        //  }
+
+
+        
+
+
+    </script>
+</body>
+</html>

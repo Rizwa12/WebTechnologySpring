@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="ShowDate()">
+    <script>
+        //var date = new Date();
+        //document.write(date.getDate());
+       // document.write(date.getDay())
+       //document.write(date.getFullYear())
+       //document.write(date.getMonth()+1)
+       //document.write(date.getTime())
+       //This value is what date.getTime() returns — milliseconds since January 1, 1970 (Unix timestamp).
+      //let now = new Date();
+       //document.write(now.toLocaleTimeString());
+//[0-janu,1-feb,2-march,]
+       //today
+       //date
+       //month
+       function ShowDate()
+       {
+       var mydate = new Date();
+       document.write(mydate.getDate()+"<br>")
+       document.write(mydate.getDay()+"<br>")
+       document.write(mydate.getFullYear()+"<br>")
+        document.write((mydate.getMonth()+1)+"<br>")
+        document.write(mydate.getTime()+"<br>")
+        document.write(mydate.toTimeString())
+        var t = setTimeout(function(){
+        ShowDate();
+        }, 1000);
+       }
+      //function click 
+      //date of birth
+      //Day: Month: Year: Time:Minutes: Second
+    </script>
+</body>
+</html>
