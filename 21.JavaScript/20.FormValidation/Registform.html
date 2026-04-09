@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete HTML Form</title>
+<script>
+function validate() {
+    // Get values
+    var id = document.getElementById("studentId").value.trim();
+    var name = document.getElementById("fullname").value.trim();
+    var email = document.getElementById("email").value.trim();
+
+    // Validate ID
+    if (id === "" || isNaN(id) || id <= 0) {
+        alert("Please enter a valid ID (number greater than 0).");
+        document.getElementById("studentId").focus();
+        return false;
+    }
+
+    // Validate Name
+    if (name === "") {
+        alert("Please enter your Name.");
+        document.getElementById("fullname").focus();
+        return false;
+    }
+    var namePattern = /^[A-Za-z\s]+$/;
+    if (!namePattern.test(name)) {
+        alert("Name can contain only letters and spaces.");
+        document.getElementById("fullname").focus();
+        return false;
+    }
+
+    // Validate Email
+    if (email === "") {
+        alert("Please enter your Email.");
+        document.getElementById("email").focus();
+        return false;
+    }
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid Email address.");
+        document.getElementById("email").focus();
+        return false;
+    }
+
+    // Validate Gender
+    var genders = document.getElementsByName("gender");
+    var genderSelected = false;
+    for (var i = 0; i < genders.length; i++) {
+        if (genders[i].checked) {
+            genderSelected = true;
+            break;
+        }
+    }
+    if (!genderSelected) {
+        alert("Please select your Gender.");
+        return false;
+    }
+
+    // All validations passed
+    alert("Form submitted successfully!\nID: " + id + "\nName: " + name + "\nEmail: " + email);
+    return true;
+}
+</script>
+</head>
+<body>
+
+<h2>Complete HTML Form Example</h2>
+
+<form>
+    <!-- ID -->
+    <label for="studentId">ID:</label>
+    <input type="number" id="studentId" name="studentId" placeholder="Enter your ID">
+    <br><br>
+
+    <!-- Full Name -->
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+    <br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+    <br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <br><br>
+
+    <!-- Age -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1" max="120">
+    <br><br>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+    <br><br>
+
+    <!-- Gender -->
+    <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+    </fieldset>
+    <br>
+
+    <!-- Hobbies -->
+    <fieldset>
+        <legend>Hobbies:</legend>
+        <input type="checkbox" id="cricket" name="hobbies" value="cricket">
+        <label for="cricket">Cricket</label>
+        <input type="checkbox" id="football" name="hobbies" value="football">
+        <label for="football">Football</label>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label>
+    </fieldset>
+    <br>
+
+    <!-- Country -->
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="">--Select Country--</option>
+        <option value="pakistan">Pakistan</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+    </select>
+    <br><br>
+
+    <!-- Languages Known -->
+    <label for="languages">Languages Known:</label>
+    <select id="languages" name="languages" multiple size="4">
+        <option value="english">English</option>
+        <option value="urdu">Urdu</option>
+        <option value="arabic">Arabic</option>
+        <option value="french">French</option>
+    </select>
+    <br><br>
+
+    <!-- Short Bio -->
+    <label for="bio">Short Bio:</label>
+    <textarea id="bio" name="bio" rows="4" placeholder="Write something about yourself"></textarea>
+    <br><br>
+
+    <!-- File Upload -->
+    <label for="profilePic">Upload Profile Picture:</label>
+    <input type="file" id="profilePic" name="profilePic" accept="image/*">
+    <br><br>
+
+    <!-- Personal Website -->
+    <label for="website">Personal Website:</label>
+    <input type="url" id="website" name="website" placeholder="https://example.com">
+    <br><br>
+
+    <!-- Favorite Color -->
+    <label for="favcolor">Favorite Color:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+    <br><br>
+
+    <!-- Rating -->
+    <label for="rating">Rating:</label>
+    <input type="range" id="rating" name="rating" min="1" max="10">
+    <br><br>
+
+    <!-- Buttons -->
+    <input type="button" value="ClickMe" onclick="validate()">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var json = {
+            "student":[
+                {
+                    "id":1,"name":"ali"
+                },
+                {
+                    "id":2,"name":"usman"
+                },
+                {
+                    "id":3,"name":"shakir"
+                }
+            ],
+            
+        };
+        document.write('<table border="1">');
+            document.write('<tr><th>ID</th><th>Name</th></tr>');
+            for (var i = 0; i < json.student.length; i++) {
+                document.write('<tr>');
+                    document.write('<td>' + json.student[i].id + '</td>');
+                    document.write('<td>' + json.student[i].name + '</td>');
+                    document.write('</tr>');
+                }
+                document.write('</table>');
+
+    </script>
+</body>
+</html>

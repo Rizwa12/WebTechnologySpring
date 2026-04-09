@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validae()
+        {
+            var un = document.getElementById("un").value;
+            var pass = document.getElementById("pass").value;
+        if(un === "admin" && pass === "123")
+        {
+            alert("You have successfully login")
+
+        }
+        else
+        {
+            alert("password is invalid")
+        }
+
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <label>UserName</label>
+        <input type="text" id = "un">
+        <label>Password:</label>
+         <input type="password" id = "pass">
+         <input type="button" value="ClickMe" onclick="validae()">
+    </form>
+</body>
+</html>

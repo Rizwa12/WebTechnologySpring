@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //below json object
+        var obj = {
+            "name": "BIIT",
+            "age": 30
+
+        }
+        //below javascript object
+        var obj1 = {
+            name: "BIIT",
+            "age": 30
+
+        }
+        //simple array
+        var array = ["usman","ahamd"]
+
+        //json Array
+        var json = {
+            "student":[
+                {
+                    "id":1,"name":"ali"
+                },
+                {
+                    "id":2,"name":"ali"
+                }
+            ],
+            
+        };
+        
+        for(var i in json.student)
+        {
+             document.write("ID: " + json.student[i].id + "<br>");
+             document.write("Name: " + json.student[i].name+ "<br><br>");
+             
+        }
+        // for(index in json.student)
+        // {
+        //  for(key in json.student[index])
+        //  {
+        //     document.write(json.student[index][key]+"<br>");
+        //  }
+         
+         
+        //}
+
+        //document.write(json.student[0].id + "<br>")
+        //document.write(json.student[0].name+ "<br>")
+        
+        //another example
+        var json1 = {
+            "name":"hamza",
+            "age": 12,
+            "hobies":["cricket","hocket"],//array
+            "Family":{ //object
+                "Uncle":"Ali",
+                "Brother": "kjkjk"
+
+            },
+            "Ismaried": true,
+            "Education": null
+        }
+       
+       //document.write(JSON.stringify(json1))
+       
+
+        //
+        var json1 = '{"name":"hamza","age":12,"hobies":["cricket","hocket"],"Family":{"Uncle":"Ali","Brother":"kjkjk"}}';
+         document.write(json1)
+          
+    </script>
+</body>
+</html>
