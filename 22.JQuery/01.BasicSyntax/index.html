@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script src="Jquery.js">
+
+    </script> -->
+    <!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Your custom script -->
+<script>
+    // $(document).ready(function(){
+    //     alert('Welcome to jQuery');
+    // });
+
+    $(document).ready(function(){
+         $("#btn1").click(function(){
+            $("#p1").css("color","yellow")
+        //      $(".p2").css({
+        //     "font-size": "35px",
+        //     "background-color": "yellow"
+            
+        // });
+        $("h2").css("font-size","40px")
+         });
+     });
+</script>
+     <h2>Pakistan Zaindabad</h2>
+    <p id="p1">Welcome to Jquey</p>
+    <p class ="p2">Welcome to BIIT</p>   
+    <input type="button" value="Click" id="btn1"> 
+</body>
+</html>

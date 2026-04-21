@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- //simple syntax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script>
+        $(document).ready(function(){
+            //alert("welcome to jquery")
+            $("#btn1").click(function(){
+                //document.write("welcome")
+                $("#para1").css("color","yellow");
+                $("#para1").css("font-size","40px")
+                $("#para1").css("background-color","orange")
+                $(".header").css("background-color","red")
+                $("h3").css("color","pink")
+            })
+        })
+    </script> -->
+    <script>
+        $(document).ready(function()
+        {
+             $("#btn1").click(function()
+             {
+                ///$("*").css("font-size","50px") //universal selector
+                //selecting list item
+                //$("div ul li").css("color","orange")
+                //$("#list2  li").css("font-size","40px")
+
+                //selecting multiple class
+
+                //$(".c1,.c2").css("background-color","yellow")
+                 //$("p:even").css("background-color", "yellow");
+
+                 $("#list1 li:even").css("color","red")
+                 $("#list1 li:odd").css("color","pink")
+
+                 $(".perr tr:even").css("color","yellow")
+
+
+
+                //selecting multiple items and tag ??
+             })
+
+        })
+        
+    </script>
+    <!-- <p>hello biit</p>
+    <h3>pAkistan</h3>
+    <h5>gjfghfghg</h5>
+    <div>
+        <ul>
+            <li>hh</li>
+            <li>hh</li>
+            <li>hh</li>
+        </ul>
+    </div> -->
+    <div class="c1">
+    <ul id="list1">
+    <li>Pakistan</li>
+    <li>USA</li>
+    <li>IRAN</li>
+    <li>TRUMP</li>
+    <li>FiledMarshal</li>
+ </ul>
+ </div>
+<div class="c2">
+  <ul id="list2">
+    <li>Pakistan</li>
+    <li>USA</li>
+    <li>IRAN</li>
+    <li>TRUMP</li>
+    <li>FiledMarshal</li>
+    </ul>
+    </div>
+
+    <table class="perr" border="1">
+        <tr>
+        <th>name</th>
+        <th>Semester</th>
+        </tr>
+        <tr>
+        <td>name</td>
+        <td>Semester</td>
+        </tr>
+        <tr>
+        <td>name</td>
+        <td>Semester</td>
+        </tr>
+
+    </table>
+    
+    <input type="button" value="click" id="btn1">
+</body>
+</html>

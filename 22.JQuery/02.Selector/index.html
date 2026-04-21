@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        //universalselector
+        // $(document).ready(function(){
+        //     $("#btn").click(function(){
+        //         $("*").css("color","red")
+
+        //     });
+
+        // });
+        //selecting list item
+
+        // $(document).ready(function(){
+        //     $("#btn").click(function(){
+        //         $("ul li").css("font-size","40px");
+        //         $("#list1 li").css("color","yellow")
+        //     })
+        
+        // })
+
+        //selecting multiple classes
+        //  $(document).ready(function(){
+        //     $("#btn").click(function(){
+        //         $(".c1,.c2").css("font-size","40px");
+               
+        //     })
+        
+        // })
+
+        //selecting multiple element
+        // $(document).ready(function(){
+        //     $("#btn").click(function(){
+        //         $("h1,p").css("font-family","arial");
+               
+        //     })
+        
+        // })
+
+        //selecting first p element among all p element
+         $(document).ready(function(){
+            $("#btn").click(function(){
+                //$("div p:first-child").css("background-color", "red");
+                //$("div p:first").css("background-color","red")
+                //$("div p:last").css("background-color","yellow")
+                $("p:even").css("background-color", "yellow");  // even index
+                $("p:odd").css("background-color", "lightblue"); 
+                
+               
+            })
+        
+        })
+
+
+
+    </script>
+<!-- <p>Wlcome to Jquery</p>
+<p>Wlcome to BIIT</p>
+<h1>
+    heading1
+</h1>
+<h2>
+    heading2
+</h2>
+<h3>
+    heading3
+</h3>
+<div>
+    jhjhjhj
+</div> -->
+
+<!-- ul>li*5 -->
+ <!-- <ul id="list1">
+    <li>Pakistan</li>
+    <li>USA</li>
+    <li>IRAN</li>
+    <li>TRUMP</li>
+    <li>FiledMarshal</li>
+ </ul>
+
+ <ul>
+    <li>Pakistan</li>
+    <li>USA</li>
+    <li>IRAN</li>
+    <li>TRUMP</li>
+    <li>FiledMarshal</li>
+ </ul> -->
+
+ <!-- <p class="c1">rizwan</p>
+ <p class="c2">basit</p>
+ <p>usmaa</p> -->
+
+
+ <!-- <p>Hello</p>
+ <p>Paistan</p>
+ <h1>heading1</h>
+ <h2>headin2</h2> -->
+<div>
+ <p>selecting first p element</p>
+ <p>element among all p element</p>
+ <p>element</p>
+ </div>
+    <input type="button" value="click" id="btn"
+</body>
+</html>
